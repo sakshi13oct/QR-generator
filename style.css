@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: #001122;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* outer box */
+.main-container {
+    background-color: #155e75;
+    width: 90%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    border-radius: 15px;
+    text-align: center;
+    color: white;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+/* h1 */
+.main-heading { 
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+    /* text-transform: uppercase; */
+}
+
+/* input */
+.input-text {
+    width: 100%;
+    padding: 0.6rem;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+
+.size {
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* selection of pixels */
+.sizes {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+
+.qr-code {
+    margin: 1rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* .qr-code img,
+.qr-code canvas {
+    border: 2px solid #fff;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #fff;
+    max-width: 100%;
+    height: auto;
+} */
+
+.qr-code img{
+    border: 2px solid #fff;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #fff;
+    max-width: 100%;
+    height: auto;
+}
+
+.gen-down-link {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.gen-down-link button {
+    padding: 0.6rem 1.2rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #0f766e;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+.gen-down-link button:hover {
+    background-color: #0e5a54;
+}
+
+
+@media screen and (max-width: 520px) {
+    .main-container {
+        width: 90%;
+        padding: 1.5rem;
+    }
+
+    .main-heading {
+        font-size: 1.6rem;
+    }
+}
